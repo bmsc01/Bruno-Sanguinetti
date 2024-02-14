@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yo, Bruno</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/297e350ea0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c9b87a4bee.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div class="container">   
+        <header id="encabezado">   
+            <div class="entrada">
+                <a href="index.html"><i class="fa-regular fa-star"></i></a> 
+                <h1 class="titulo">Mi web</h1>
+            </div>
+            <nav class="navbar">
+                <input type="checkbox" id="check" />
+                <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+                </label>
+                <ul>
+                    <li> <a class="navli" href="secciones/home.html">Inicio</a></li>
+                    <li> <a class="navli" href="secciones/aboutme.html">Acerca de mí</a></li>
+                    <li> <a class="navli" href="secciones/works.html">Trabajos</a></li>
+                    <li> <a class="navli" href="secciones/services.html">Services</a></li>
+                    <li> <a class="navli" href="secciones/contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="seccion-principal">  
+            <section class="seccion-1">
+                <div class="acerca-de">
+                    <h2>Acerca de mí</h2>
+                    <p class="parrafo1">
+                        ¡Bienvenido a mi página! Aquí, aprenderás más sobre mí.
+                    </p>
+                    <p class="parrafo2">
+                        Me llamo Bruno, soy de Uruguay y vivo en Ciudad de la Costa.
+                         Me gusta el asado y salir a tomar mate con mis amigos en la tardecita.
+                         Me encantaría aprender a programar para poder ayudar a las personas a mostrar lo que hacen.
+                    </p>
+                </div>
+                <div class="acerca-imagen">
+                    <img src="img/hero-img.png" alt="imagen personal" width="230" height="380" > <!-- Comentario-->
+                </div>
+            </section>
+            <section class="seccion-2">   
+                <img src="img/carrusel-img.jpg" alt="imagen de carrusel" width=100%>
+                <div class="accesos">
+                    <div> <img src="img/universitary-cap.png" alt="universitary-cap" height="200px">
+                    <h1>Mi formación</h1> 
+                    </div>
+                    <div> <img src="img/laboral-experience.png" alt="laboral-experience" height="200px">
+                    <h1>Mi experiencia</h1> 
+                    </div>
+                    <div> <img src="img/mate.png" alt="mate" height="200px">
+                    <h1>Mis gustos</h1> 
+                    </div>
+                </div>
+                <footer id="redes">
+                    <h3>Contacto</h3>
+                    <ul>
+                        <li> <p>Github</p></li>
+                        <li> <p>LinkedIn</p></li>
+                        <li> <p>Instagram</p></li>
+                        <li> <p>Whatsapp</p></li>
+                        <li> <p>Facebook</p></li>
+                    </ul>
+                </footer>
+            </section>
+        </main>
+        <footer class="form-header">
+            <h1 class="final">Contacto</h1>
+            <p><em>¡Esperamos tu consulta!</em></p>
+      
+            <form action="" method="get" class="formulario" id="form">
+              <div class="form-row">
+                  <label for="nombre">Nombre</label>
+                  <input id="nombre" name="nombre" type="text" />
+              </div>
+              <div class="form-row">
+                  <label for="email">Email</label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="pepe@gmail.com"
+                    required
+                  />
+              </div>
+              <div class="form-row">
+                  <label for="mensaje">Mensaje</label>
+                  <textarea id="mensaje" name="mensaje"></textarea>
+              </div>
+              <div class="form-row">
+                  <button>Enviar</button>
+              </div>
+              <div id="alertas"></div>
+            </form>
+          </footer>
+    </div>
+    <script src="script.js" defer></script>
+</body>
+</html>
